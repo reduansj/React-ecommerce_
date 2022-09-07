@@ -1,0 +1,341 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Air Jordan 1 Hi FlyEase",
+      "brand": "nike",
+      "category": "men",
+      "adult": "true",
+      "color": "",
+      "price": [
+        159.99
+      ],
+      "img": "img_1",
+      "url": "../../img/Air Jordan 1 Hi FlyEase.webp",
+      "sizes ": [
+        "EU41",
+        "EU42",
+        "EU43",
+        "EU44",
+        "EU45",
+        "EU46",
+        "EU47",
+        "EU48",
+        "EU49"
+      ],
+      "description": "Get outside! These AJ1s are ready for any adventure you wanna take, from the backyard to the national park. Made with the style and comfort you expect from a pair of Jordan sneakers—think quality leather uppers and Air cushioning in the sole—this design gets an extra splash of summery fun with bright colors and embroidered details."
+    },
+    {
+      "id": 2,
+      "title": "Air Jordan 1 Mid SE",
+      "brand": "nike",
+      "category": "men",
+      "adult": "true",
+      "color": "",
+      "price": [
+        159.99
+      ],
+      "img": "img_2",
+      "url": "../../img/Air Jordan 1 Mid SE.webp",
+      "sizes ": [
+        "EU41",
+        "EU42",
+        "EU43",
+        "EU44",
+        "EU45",
+        "EU46",
+        "EU47",
+        "EU48",
+        "EU49"
+      ],
+      "description": "Get outside! These AJ1s are ready for any adventure you wanna take, from the backyard to the national park. Made with the style and comfort you expect from a pair of Jordan sneakers—think quality leather uppers and Air cushioning in the sole—this design gets an extra splash of summery fun with bright colors and embroidered details."
+    },
+    {
+      "id": 3,
+      "title": "Air Jordan 1 Mid SE2",
+      "brand": "nike",
+      "category": "men",
+      "adult": "true",
+      "color": "",
+      "price": [
+        159.99
+      ],
+      "img": "img_3",
+      "url": "../../img/Air Jordan 1 Mid SE2.jpg",
+      "sizes ": [
+        "EU41",
+        "EU42",
+        "EU43",
+        "EU44",
+        "EU45",
+        "EU46",
+        "EU47",
+        "EU48",
+        "EU49"
+      ],
+      "description": "Get outside! These AJ1s are ready for any adventure you wanna take, from the backyard to the national park. Made with the style and comfort you expect from a pair of Jordan sneakers—think quality leather uppers and Air cushioning in the sole—this design gets an extra splash of summery fun with bright colors and embroidered details."
+    },
+    {
+      "id": 4,
+      "title": "Air Jordan 1 Mid SE3",
+      "brand": "nike",
+      "category": "men",
+      "adult": "true",
+      "color": "",
+      "price": [
+        159.99
+      ],
+      "img": "img_4",
+      "url": "../../img/Air Jordan 1 Mid SE3.webp",
+      "sizes ": [
+        "EU41",
+        "EU42",
+        "EU43",
+        "EU44",
+        "EU45",
+        "EU46",
+        "EU47",
+        "EU48",
+        "EU49"
+      ],
+      "description": "Get outside! These AJ1s are ready for any adventure you wanna take, from the backyard to the national park. Made with the style and comfort you expect from a pair of Jordan sneakers—think quality leather uppers and Air cushioning in the sole—this design gets an extra splash of summery fun with bright colors and embroidered details."
+    },
+    {
+      "id": 5,
+      "title": "Air Jordan 1 Mid",
+      "brand": "nike",
+      "category": "men",
+      "adult": "true",
+      "color": "",
+      "price": [
+        159.99
+      ],
+      "img": "img_5",
+      "url": "../../img/Air Jordan 1 Mid.webp",
+      "sizes ": [
+        "EU41",
+        "EU42",
+        "EU43",
+        "EU44",
+        "EU45",
+        "EU46",
+        "EU47",
+        "EU48",
+        "EU49"
+      ],
+      "description": "Get outside! These AJ1s are ready for any adventure you wanna take, from the backyard to the national park. Made with the style and comfort you expect from a pair of Jordan sneakers—think quality leather uppers and Air cushioning in the sole—this design gets an extra splash of summery fun with bright colors and embroidered details."
+    },
+    {
+      "id": 6,
+      "title": "Air Jordan 1 Mid2",
+      "brand": "nike",
+      "category": "women",
+      "adult": "true",
+      "color": "",
+      "price": [
+        159.99
+      ],
+      "img": "img_6",
+      "url": "../../img/Air Jordan 1 Mid2.webp",
+      "sizes ": [
+        "EU41",
+        "EU42",
+        "EU43",
+        "EU44",
+        "EU45",
+        "EU46",
+        "EU47",
+        "EU48",
+        "EU49"
+      ],
+      "description": "Get outside! These AJ1s are ready for any adventure you wanna take, from the backyard to the national park. Made with the style and comfort you expect from a pair of Jordan sneakers—think quality leather uppers and Air cushioning in the sole—this design gets an extra splash of summery fun with bright colors and embroidered details."
+    },
+    {
+      "id": 7,
+      "title": "Air Jordan 5 Retro SE",
+      "brand": "nike",
+      "category": "women",
+      "adult": "true",
+      "color": "",
+      "price": [
+        159.99
+      ],
+      "img": " img_7",
+      "url": "../../img/Air Jordan 1 Retro High OG.webp",
+      "sizes ": [
+        "EU41",
+        "EU42",
+        "EU43",
+        "EU44",
+        "EU45",
+        "EU46",
+        "EU47",
+        "EU48",
+        "EU49"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Air Jordan 7 Retro SE",
+      "brand": "nike",
+      "category": "men",
+      "adult": "true",
+      "color": "",
+      "price": [
+        159.99
+      ],
+      "img": "img_8",
+      "url": "../../img/Air Jordan 5 Retro SE.webp",
+      "sizes ": [
+        "EU41",
+        "EU42",
+        "EU43",
+        "EU44",
+        "EU45",
+        "EU46",
+        "EU47",
+        "EU48",
+        "EU49"
+      ],
+      "description": "Get outside! These AJ1s are ready for any adventure you wanna take, from the backyard to the national park. Made with the style and comfort you expect from a pair of Jordan sneakers—think quality leather uppers and Air cushioning in the sole—this design gets an extra splash of summery fun with bright colors and embroidered details."
+    },
+    {
+      "id": 9,
+      "title": "Jordan 1 KO",
+      "brand": "nike",
+      "category": "men",
+      "adult": "true",
+      "color": "",
+      "price": [
+        159.99
+      ],
+      "img": "img_9",
+      "url": "../../img/Air Jordan 7 Retro SE.webp",
+      "sizes ": [
+        "EU41",
+        "EU42",
+        "EU43",
+        "EU44",
+        "EU45",
+        "EU46",
+        "EU47",
+        "EU48",
+        "EU49"
+      ],
+      "description": "Get outside! These AJ1s are ready for any adventure you wanna take, from the backyard to the national park. Made with the style and comfort you expect from a pair of Jordan sneakers—think quality leather uppers and Air cushioning in the sole—this design gets an extra splash of summery fun with bright colors and embroidered details."
+    },
+    {
+      "id": 10,
+      "title": "Air Jordan 1 Hi FlyEase",
+      "brand": "nike",
+      "category": "men",
+      "adult": "true",
+      "color": "",
+      "price": [
+        159.99
+      ],
+      "img": "img_10",
+      "url": "../../img/Jordan 1 KO.webp",
+      "sizes ": [
+        "EU41",
+        "EU42",
+        "EU43",
+        "EU44",
+        "EU45",
+        "EU46",
+        "EU47",
+        "EU48",
+        "EU49"
+      ],
+      "description": "Get outside! These AJ1s are ready for any adventure you wanna take, from the backyard to the national park. Made with the style and comfort you expect from a pair of Jordan sneakers—think quality leather uppers and Air cushioning in the sole—this design gets an extra splash of summery fun with bright colors and embroidered details."
+    },
+    {
+      "id": 11,
+      "title": "Air Jordan 1 Hi FlyEase",
+      "brand": "nike",
+      "category": "men",
+      "adult": "true",
+      "color": "",
+      "price": [
+        159.99
+      ],
+      "img": "img_11",
+      "url": "../../img/Air Jordan 1 Hi FlyEase.webp",
+      "sizes ": [
+        "EU41",
+        "EU42",
+        "EU43",
+        "EU44",
+        "EU45",
+        "EU46",
+        "EU47",
+        "EU48",
+        "EU49"
+      ],
+      "description": "Get outside! These AJ1s are ready for any adventure you wanna take, from the backyard to the national park. Made with the style and comfort you expect from a pair of Jordan sneakers—think quality leather uppers and Air cushioning in the sole—this design gets an extra splash of summery fun with bright colors and embroidered details."
+    },
+    {
+      "id": 12,
+      "title": "Air Jordan 1 Hi FlyEase",
+      "brand": "nike",
+      "category": "men",
+      "adult": "true",
+      "color": "",
+      "price": [
+        159.99
+      ],
+      "img": "img_12",
+      "url": "../../img/Air Jordan 1 Mid SE3.webp",
+      "sizes ": [
+        "EU41",
+        "EU42",
+        "EU43",
+        "EU44",
+        "EU45",
+        "EU46",
+        "EU47",
+        "EU48",
+        "EU49"
+      ],
+      "description": "Get outside! These AJ1s are ready for any adventure you wanna take, from the backyard to the national park. Made with the style and comfort you expect from a pair of Jordan sneakers—think quality leather uppers and Air cushioning in the sole—this design gets an extra splash of summery fun with bright colors and embroidered details."
+    },
+    {
+      "id": 13,
+      "title": "Air Jordan 1 Hi FlyEase",
+      "brand": "nike",
+      "category": "men",
+      "adult": "true",
+      "color": "",
+      "price": [
+        159.99
+      ],
+      "img": "img_12",
+      "url": "../../img/Air Jordan 1 Mid SE3.webp",
+      "sizes ": [
+        "EU41",
+        "EU42",
+        "EU43",
+        "EU44",
+        "EU45",
+        "EU46",
+        "EU47",
+        "EU48",
+        "EU49"
+      ],
+      "description": "Get outside! These AJ1s are ready for any adventure you wanna take, from the backyard to the national park. Made with the style and comfort you expect from a pair of Jordan sneakers—think quality leather uppers and Air cushioning in the sole—this design gets an extra splash of summery fun with bright colors and embroidered details."
+    }
+  ],
+  "cart": [
+    {
+      "id": 2,
+      "title": "Air Jordan 1 Mid SE"
+    },
+    {
+      "id": 3,
+      "title": "Air Jordan 1 Mid SE2"
+    }
+  ],
+  "favorites": {
+    "name": "typicode"
+  }
+}
