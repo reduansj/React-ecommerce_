@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useQuery, useMutation } from "@tanstack/react-query";
+import { addProductToCart, getProductById } from "../../Api";
 
-import { useQuery } from "@tanstack/react-query";
-import { getProducts } from "../../Api";
-import { getProductsById } from "../../utils";
+import { useParams } from "react-router-dom";
 
 import {
   ProductImg,
@@ -11,22 +10,20 @@ import {
   ProductMain,
   ProductDetailsWrap,
 } from "./Product.styled";
-
-import { useParams } from "react-router-dom";
 import { Button } from "@chakra-ui/react";
-
-import { useAddProductsToCart } from "../../customHooks";
+import { useState } from "react";
 
 function Product() {
   const { id } = useParams();
-
+  const size = "M";
+  const [product, setProduct] = useState([]);
   const { isLoading, isError, data, error } = useQuery(
-    ["products"],
-    getProducts
+    ["product", id],
+    () => getProductById(id),
+    { onSuccess: setProduct }
   );
-  const product = !isLoading && getProductsById(data, id);
 
-  const addProduct = useAddProductsToCart();
+  const mutation = useMutation(addProductToCart);
 
   if (isLoading) {
     return (
@@ -51,7 +48,15 @@ function Product() {
           <ProductImg src={product.url} alt={product.title} />
         </ProductImgWrap>
         <ProductDetailsWrap>
-          <Button onClick={() => addProduct(product)}></Button>
+          <Button
+            onClick={() =>
+              mutation.mutate({
+                id: product.id,
+                quantity: 1,
+                size: "M",
+              })
+            }
+          ></Button>
         </ProductDetailsWrap>
       </ProductContainer>
     </ProductMain>

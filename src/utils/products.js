@@ -1,7 +1,3 @@
-export const getProductsById = (products, id) => {
-  return products.find((product) => product.id == id);
-};
-
 export const getProductsByCategory = (products, category) => {
   return products.filter((product) => product.category === category);
 };

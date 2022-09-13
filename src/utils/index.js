@@ -1,5 +1,1 @@
-export {
-  getProductsById,
-  getProductsByCategory,
-  getProductsBySearch,
-} from "./products";
+export { getProductsByCategory, getProductsBySearch } from "./products";
