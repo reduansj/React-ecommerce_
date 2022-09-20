@@ -5,14 +5,12 @@
       "title": "Air Jordan 1 Hi FlyEase",
       "brand": "nike",
       "category": "men",
-      "adult": "true",
-      "color": "",
       "price": [
-        159.99
+        119.99
       ],
       "img": "img_1",
       "url": "../../img/Air Jordan 1 Hi FlyEase.webp",
-      "sizes ": [
+      "sizes": [
         "EU41",
         "EU42",
         "EU43",
@@ -30,14 +28,12 @@
       "title": "Air Jordan 1 Mid SE",
       "brand": "nike",
       "category": "men",
-      "adult": "true",
-      "color": "",
       "price": [
-        159.99
+        99.99
       ],
       "img": "img_2",
       "url": "../../img/Air Jordan 1 Mid SE.webp",
-      "sizes ": [
+      "sizes": [
         "EU41",
         "EU42",
         "EU43",
@@ -55,14 +51,12 @@
       "title": "Air Jordan 1 Mid SE2",
       "brand": "nike",
       "category": "men",
-      "adult": "true",
-      "color": "",
       "price": [
-        159.99
+        89.99
       ],
       "img": "img_3",
       "url": "../../img/Air Jordan 1 Mid SE2.jpg",
-      "sizes ": [
+      "sizes": [
         "EU41",
         "EU42",
         "EU43",
@@ -80,14 +74,12 @@
       "title": "Air Jordan 1 Mid SE3",
       "brand": "nike",
       "category": "men",
-      "adult": "true",
-      "color": "",
       "price": [
-        159.99
+        149.99
       ],
       "img": "img_4",
       "url": "../../img/Air Jordan 1 Mid SE3.webp",
-      "sizes ": [
+      "sizes": [
         "EU41",
         "EU42",
         "EU43",
@@ -105,14 +97,12 @@
       "title": "Air Jordan 1 Mid",
       "brand": "nike",
       "category": "men",
-      "adult": "true",
-      "color": "",
       "price": [
-        159.99
+        179.99
       ],
       "img": "img_5",
       "url": "../../img/Air Jordan 1 Mid.webp",
-      "sizes ": [
+      "sizes": [
         "EU41",
         "EU42",
         "EU43",
@@ -130,14 +120,12 @@
       "title": "Air Jordan 1 Mid2",
       "brand": "nike",
       "category": "women",
-      "adult": "true",
-      "color": "",
       "price": [
-        159.99
+        180
       ],
       "img": "img_6",
       "url": "../../img/Air Jordan 1 Mid2.webp",
-      "sizes ": [
+      "sizes": [
         "EU41",
         "EU42",
         "EU43",
@@ -155,14 +143,12 @@
       "title": "Air Jordan 5 Retro SE",
       "brand": "nike",
       "category": "women",
-      "adult": "true",
-      "color": "",
       "price": [
         159.99
       ],
       "img": " img_7",
       "url": "../../img/Air Jordan 1 Retro High OG.webp",
-      "sizes ": [
+      "sizes": [
         "EU41",
         "EU42",
         "EU43",
@@ -179,14 +165,12 @@
       "title": "Air Jordan 7 Retro SE",
       "brand": "nike",
       "category": "men",
-      "adult": "true",
-      "color": "",
       "price": [
         159.99
       ],
       "img": "img_8",
       "url": "../../img/Air Jordan 5 Retro SE.webp",
-      "sizes ": [
+      "sizes": [
         "EU41",
         "EU42",
         "EU43",
@@ -204,14 +188,12 @@
       "title": "Jordan 1 KO",
       "brand": "nike",
       "category": "men",
-      "adult": "true",
-      "color": "",
       "price": [
         159.99
       ],
       "img": "img_9",
       "url": "../../img/Air Jordan 7 Retro SE.webp",
-      "sizes ": [
+      "sizes": [
         "EU41",
         "EU42",
         "EU43",
@@ -229,14 +211,12 @@
       "title": "Air Jordan 1 Hi FlyEase",
       "brand": "nike",
       "category": "men",
-      "adult": "true",
-      "color": "",
       "price": [
         159.99
       ],
       "img": "img_10",
       "url": "../../img/Jordan 1 KO.webp",
-      "sizes ": [
+      "sizes": [
         "EU41",
         "EU42",
         "EU43",
@@ -253,15 +233,13 @@
       "id": 11,
       "title": "Air Jordan 1 Hi FlyEase",
       "brand": "nike",
-      "category": "men",
-      "adult": "true",
-      "color": "",
+      "category": "new",
       "price": [
         159.99
       ],
       "img": "img_11",
       "url": "../../img/Air Jordan 1 Hi FlyEase.webp",
-      "sizes ": [
+      "sizes": [
         "EU41",
         "EU42",
         "EU43",
@@ -279,14 +257,12 @@
       "title": "Air Jordan 1 Hi FlyEase",
       "brand": "nike",
       "category": "men",
-      "adult": "true",
-      "color": "",
       "price": [
         159.99
       ],
       "img": "img_12",
       "url": "../../img/Air Jordan 1 Mid SE3.webp",
-      "sizes ": [
+      "sizes": [
         "EU41",
         "EU42",
         "EU43",
@@ -303,15 +279,13 @@
       "id": 13,
       "title": "Air Jordan 1 Hi FlyEase",
       "brand": "nike",
-      "category": "men",
-      "adult": "true",
-      "color": "",
+      "category": "new",
       "price": [
         159.99
       ],
       "img": "img_12",
       "url": "../../img/Air Jordan 1 Mid SE3.webp",
-      "sizes ": [
+      "sizes": [
         "EU41",
         "EU42",
         "EU43",
@@ -323,22 +297,18 @@
         "EU49"
       ],
       "description": "Get outside! These AJ1s are ready for any adventure you wanna take, from the backyard to the national park. Made with the style and comfort you expect from a pair of Jordan sneakers—think quality leather uppers and Air cushioning in the sole—this design gets an extra splash of summery fun with bright colors and embroidered details."
-    }
-  ],
-  "cart": [
+    },
     {
-      "id": 1,
-      "title": "Air Jordan 1 Hi FlyEase",
+      "id": 14,
+      "title": "Nike Dunk High",
       "brand": "nike",
-      "category": "men",
-      "adult": "true",
-      "color": "",
+      "category": "kids",
       "price": [
-        159.99
+        49.99
       ],
-      "img": "img_1",
-      "url": "../../img/Air Jordan 1 Hi FlyEase.webp",
-      "sizes ": [
+      "img": "img_12",
+      "url": "../../img/Nike Dunk High.webp",
+      "sizes": [
         "EU41",
         "EU42",
         "EU43",
@@ -349,44 +319,47 @@
         "EU48",
         "EU49"
       ],
-      "description": "Get outside! These AJ1s are ready for any adventure you wanna take, from the backyard to the national park. Made with the style and comfort you expect from a pair of Jordan sneakers—think quality leather uppers and Air cushioning in the sole—this design gets an extra splash of summery fun with bright colors and embroidered details.",
-      "quantity": 9,
-      "size": "M"
+      "description": "Feel like an '80s-era All-Star in the Nike Dunk High. These classic high-tops are scaled down just right for kids. With a super durable design and OG colors, these are an easy slam dunk."
     },
     {
-      "id": 2,
-      "quantity": 1,
-      "size": "M"
-    },
-    {
-      "id": 3,
-      "title": "Air Jordan 1 Mid SE2",
+      "id": 15,
+      "title": "Jordan 1 Mid",
       "brand": "nike",
-      "category": "men",
-      "adult": "true",
-      "color": "",
+      "category": "kids",
       "price": [
-        159.99
+        29.99
       ],
-      "img": "img_3",
-      "url": "../../img/Air Jordan 1 Mid SE2.jpg",
-      "sizes ": [
-        "EU41",
-        "EU42",
-        "EU43",
-        "EU44",
-        "EU45",
-        "EU46",
-        "EU47",
-        "EU48",
-        "EU49"
+      "img": "img_12",
+      "url": "../../img/Jordan 1 Mid.webp",
+      "sizes": [
+        "2c",
+        "3c",
+        "4c",
+        "5c",
+        "6c",
+        "7c",
+        "8c",
+        "9c",
+        "10c"
       ],
-      "description": "Get outside! These AJ1s are ready for any adventure you wanna take, from the backyard to the national park. Made with the style and comfort you expect from a pair of Jordan sneakers—think quality leather uppers and Air cushioning in the sole—this design gets an extra splash of summery fun with bright colors and embroidered details.",
-      "quantity": 6,
-      "size": "M"
+      "description": "Let your little one shine in the Jordan 1 Mid. Soft, satin details help keep them comfortable while a bold pop of pink brings fun to the look."
     }
   ],
-  "favorites": {
-    "name": "typicode"
-  }
+  "cart": [],
+  "favorites": [
+    {
+      "id": 9
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 2
+    }
+  ],
+  "checkOut": [],
+  "user": []
 }

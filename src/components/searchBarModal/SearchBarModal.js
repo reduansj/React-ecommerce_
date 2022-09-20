@@ -5,7 +5,7 @@ import {
   ProductPreviewContainer,
 } from "./SearchBarModal.styled";
 import { useQuery } from "@tanstack/react-query";
-import { getProducts } from "../../Api";
+import { getProducts } from "../../Api/products";
 import { getProductsBySearch } from "../../utils";
 import { ProductLink } from "../../pages/shop/Shop.styled";
 

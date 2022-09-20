@@ -1,32 +1,45 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { Container, Text } from "./SignIn.styled";
+
+import { AuthContext } from "../../auth/context";
 import {
-  Container,
-  FormContent,
   FormWrap,
-  Icon,
+  FormContent,
   Form,
   FormH1,
+  FormLabel,
   FormInput,
   FormButton,
-  FormLabel,
-  Text,
-} from "./SignIn.styled";
+} from "../../components/form/Form.styled";
+import { redirect, useNavigate } from "react-router-dom";
 
 const SignIn = () => {
+  const { login } = useContext(AuthContext);
+
+  const navigate = useNavigate();
+
+  const handelSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData);
+
+    login(data);
+    navigate("/");
+  };
+
   return (
     <>
       <Container>
         <FormWrap>
-          <Icon to="/">STALION'S</Icon>
           <FormContent>
-            <Form action="">
+            <Form onSubmit={handelSubmit}>
               <FormH1>Sign in to your account</FormH1>
               <FormLabel htmlFor="for">Email</FormLabel>
-              <FormInput type="email" requierd />
+              <FormInput name="email" type="email" required />
               <FormLabel htmlFor="for">Password</FormLabel>
-              <FormInput type="password" requierd />
+              <FormInput name="password" type="password" required />
               <FormButton type="submit">Sign In</FormButton>
-              <Text>Forgot password</Text>
             </Form>
           </FormContent>
         </FormWrap>

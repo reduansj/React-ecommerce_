@@ -1,6 +1,6 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { useEffect, useState } from "react";
-import { getProductById, editCartProduct, deleteCartProduct } from "../../Api";
+
+import { deleteCartProduct } from "../../Api/cart";
 import {
   Text,
   ProductPreviewContainer,
@@ -9,7 +9,7 @@ import {
   Counter,
 } from "./Cart.styled";
 
-const ProductQuantityCounter = ({ dispatch, cartProduct: product }) => {
+const CartProductContainer = ({ dispatch, cartProduct: product }) => {
   const queryClient = useQueryClient();
 
   const removeCartProduct = useMutation(deleteCartProduct, {
@@ -30,21 +30,25 @@ const ProductQuantityCounter = ({ dispatch, cartProduct: product }) => {
         </Text>
         <Counter>
           <CartButton
+            background={"black"}
             onClick={() => dispatch({ payload: product.id, type: "decrement" })}
           >
             -
           </CartButton>
           <span> {product.quantity}</span>
           <CartButton
+            background={"black"}
             onClick={() => dispatch({ payload: product.id, type: "increment" })}
           >
             +
           </CartButton>
         </Counter>
-        <CartButton onClick={() => removeProduct()}>Remove</CartButton>
+        <CartButton background={"red"} onClick={() => removeProduct()}>
+          Remove
+        </CartButton>
       </ProductPreviewContainer>
     </>
   );
 };
 
-export default ProductQuantityCounter;
+export default CartProductContainer;

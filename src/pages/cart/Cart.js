@@ -1,113 +1,140 @@
-import { useQuery } from "@tanstack/react-query";
-import { useReducer } from "react";
-import { getCart } from "../../Api";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+
+import { CartMain, CartH1, Container, CartButton } from "./Cart.styled";
+
+import CartProductContainer from "./CartProductContainer";
 import {
-  CartMain,
-  CartContent,
-  CartH1,
-  CartWrap,
-  CartSection,
-  Text,
-} from "./Cart.styled";
-import ProductQuantityCounter from "./ProductQuantityCounter";
+  Column1,
+  Column2,
+  GridTemplate,
+  GridWrapper,
+} from "../../components/grid/Grid.styled";
+import {
+  Table,
+  TableContainer,
+  Td,
+  Tfoot,
+  Th,
+  Tr,
+  Tbody,
+} from "@chakra-ui/react";
+import { CartContext } from "./context/CartContext";
 
 const Cart = () => {
-  function reducer(state, action) {
-    const { payload: id } = action;
-    switch (action.type) {
-      case "increment":
-        return state.map((product) => {
-          if (product.id === id) {
-            return {
-              ...product,
-              quantity: product.quantity + 1,
-            };
-          }
-          return product;
-        });
-      case "decrement":
-        const decrementedProduct = state.find((product) => product.id === id);
-        if (decrementedProduct.quantity === 1) {
-          return state;
-        }
-        return state.map((product) => {
-          if (product.id === id) {
-            return {
-              ...product,
-              quantity: product.quantity - 1,
-            };
-          }
-          return product;
-        });
-      case "initialize":
-        return action.payload;
+  const {
+    cartItems,
+    dispatch,
+    totalPrice,
+    subTotal,
+    shipmentPrice,
+    cartIsError,
+    cartIsLoading,
+    cartError,
+  } = useContext(CartContext);
 
-      default:
-        return state;
-    }
-  }
-
-  const { isLoading, isError, data, error } = useQuery(["cart"], getCart, {
-    onSuccess: (data) => dispatch({ type: "initialize", payload: data }),
-  });
-
-  const [cartItems, dispatch] = useReducer(reducer, data);
-
-  console.log(cartItems);
-
-  const totalPrice = cartItems?.reduce((total, cartProduct) => {
-    return (total = total + cartProduct.price * cartProduct.quantity);
-  }, 0);
-
-  // console.log(totalPrice?.toFixed(2));
-
-  if (isLoading) {
+  if (cartIsLoading) {
     return (
       <CartMain>
-        <CartWrap>
-          <CartContent>
-            <CartSection>
-              <h1>{isLoading}</h1>
-            </CartSection>
-          </CartContent>
-        </CartWrap>
+        <GridWrapper>
+          <GridTemplate>
+            <Column1>
+              <Container>
+                <CartH1> {cartIsLoading} </CartH1>;
+              </Container>
+            </Column1>
+          </GridTemplate>
+        </GridWrapper>
       </CartMain>
     );
   }
 
-  if (isError) {
+  if (cartIsError) {
     return (
       <CartMain>
-        <CartWrap>
-          <CartContent>
-            <CartSection>
-              <span>Error: {error.message}</span>;
-            </CartSection>
-          </CartContent>
-        </CartWrap>
+        <GridWrapper>
+          <GridTemplate>
+            <Column1>
+              <Container>
+                <CartH1>Error: {cartError.message} </CartH1>;
+              </Container>
+            </Column1>
+          </GridTemplate>
+        </GridWrapper>
+      </CartMain>
+    );
+  }
+
+  if (cartItems?.length === 0) {
+    return (
+      <CartMain>
+        <GridWrapper>
+          <GridTemplate>
+            <Column1>
+              <Container>
+                <CartH1>CART IS EMPTY </CartH1>;
+                <Link to="/category/products">
+                  <CartButton width={"300px"} background={"red"}>
+                    START SHOPPING
+                  </CartButton>
+                </Link>
+              </Container>
+            </Column1>
+          </GridTemplate>
+        </GridWrapper>
       </CartMain>
     );
   }
 
   return (
     <CartMain>
-      <CartWrap>
-        <CartContent>
-          <CartSection marginTop={"80px"}>
-            <CartH1>Sign in to your account</CartH1>
-            {cartItems?.map((cartProduct) => (
-              <ProductQuantityCounter
-                key={cartProduct.id}
-                cartProduct={cartProduct}
-                dispatch={dispatch}
-              />
-            ))}
-          </CartSection>
-          <CartSection marginTop={"5px"} marginBottom={"80px"}>
-            <Text>Merchandise Subtotal: 159.59</Text>
-          </CartSection>
-        </CartContent>
-      </CartWrap>
+      <GridWrapper>
+        <GridTemplate>
+          <Column1>
+            <Container>
+              <CartH1>CART</CartH1>
+              {cartItems?.map((cartProduct) => (
+                <CartProductContainer
+                  key={cartProduct.id}
+                  cartProduct={cartProduct}
+                  dispatch={dispatch}
+                />
+              ))}
+            </Container>
+          </Column1>
+          <Column2>
+            <Container>
+              <CartH1>Summary</CartH1>
+              <TableContainer style={{ color: "white" }}>
+                <Table size="sm">
+                  <Tbody>
+                    <Tr>
+                      <Td>Subtotal</Td>
+                      <Td isNumeric>${totalPrice?.toFixed(2)}</Td>
+                    </Tr>
+                    <Tr>
+                      <Td>Shipment</Td>
+
+                      <Td isNumeric>${shipmentPrice}</Td>
+                    </Tr>
+                  </Tbody>
+                  <Tfoot>
+                    <Tr>
+                      <Th>TOTAL </Th>
+                      <Th isNumeric>${subTotal}</Th>
+                    </Tr>
+                  </Tfoot>
+                </Table>
+              </TableContainer>
+              <Link to="/checkout">
+                <CartButton width={"400px"} background={"red"}>
+                  Checkout
+                </CartButton>
+              </Link>
+            </Container>
+          </Column2>
+        </GridTemplate>
+      </GridWrapper>
     </CartMain>
   );
 };

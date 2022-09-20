@@ -6,8 +6,9 @@ import {
 import ProductCard from "./productCard";
 import { Outlet, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { getProducts } from "../../Api";
+
 import { getProductsByCategory } from "../../utils";
+import { getProducts } from "../../Api/products";
 
 function Shop() {
   const { category } = useParams();

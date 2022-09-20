@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import { FaBars } from "react-icons/fa";
 import { BsBag, BsHeart } from "react-icons/bs";
@@ -14,14 +14,18 @@ import {
   NavMenu,
   NavBtn,
   NavBtnLink,
+  UserName,
 } from "./NavBar.styled";
 
 import NavItem from "./NavItem";
 
 import SearchBarModal from "../../../components/searchBarModal";
-import { color } from "@chakra-ui/react";
+import { AuthContext } from "../../../auth/context";
+import { Button } from "@chakra-ui/react";
 
 export default function NavBar({ links }) {
+  const { logged, user, logout } = useContext(AuthContext);
+
   const location = useLocation;
   const [scrollNav, setScrollNav] = useState(false);
 
@@ -65,7 +69,9 @@ export default function NavBar({ links }) {
               <NavBtnLink to="/cart">
                 <BsBag style={{ color: "black" }} />
               </NavBtnLink>
-              <NavBtnLink to="/signIn">Sign In</NavBtnLink>
+              {logged && <UserName>WELCOME {user.name.toUpperCase()}</UserName>}
+              {logged && <Button onClick={() => logout()}>Sign Out</Button>}
+              {!logged && <NavBtnLink to="/signIn">SignIn</NavBtnLink>}
             </NavBtn>
           </NavbarContainer>
         </Nav>

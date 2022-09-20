@@ -8,11 +8,19 @@ import {
   H2,
   Paragraph,
   BtnWrapper,
-  ArrowForward,
-  ArrowRight,
 } from "./Home.styled";
-import { useState } from "react";
+import { useContext } from "react";
+import { AuthContext } from "../../auth/context";
+import { sectionData } from "../../components/infoSection/Data";
+import InfoSection from "../../components/infoSection";
+import Services from "../../components/servicesSection";
+
 const Home = () => {
+  const { logged, user } = useContext(AuthContext);
+
+  const [aboutSectionProps, premiumSectionProps, releaseSectionProps] =
+    sectionData;
+
   return (
     <>
       <Section background={"transparent"} direction={"column"}>
@@ -21,28 +29,26 @@ const Home = () => {
         </VideoWrapper>
         <SectionContent>
           <H2>BUY SELL TRADE AUTHENTIC NIKE SHOES</H2>
-          <Paragraph>
-            Sign up for a new account and find your dream shoes.
-          </Paragraph>
-          <BtnWrapper>
-            <Button to="/" primary="true" dark="true">
-              Get Started
-            </Button>
-          </BtnWrapper>
+          {logged && (
+            <Paragraph>Welcome back {user.name.toUpperCase()}</Paragraph>
+          )}
+          {!logged && (
+            <Paragraph>
+              Sign up for a new account and find your dream shoes.
+            </Paragraph>
+          )}
+          {!logged && (
+            <BtnWrapper>
+              <Button to="/signIn" primary="true" dark="true">
+                Get Started
+              </Button>
+            </BtnWrapper>
+          )}
         </SectionContent>
       </Section>
-      <Section id="about" background={"white"} direction={"row"}></Section>
-      <Section id="premium" background={"white"} direction={"row"}>
-        <div>home</div>
-        <div>home</div>
-      </Section>
-      <Section id="services" background={"black"} direction={"row"}>
-        <H2>Our Services</H2>
-      </Section>
-      <Section id="release" background={"white"} direction={"row"}>
-        <div>home</div>
-        <div>home</div>
-      </Section>
+      <InfoSection {...aboutSectionProps} />
+      <Services />
+      <InfoSection {...premiumSectionProps} />
     </>
   );
 };

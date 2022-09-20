@@ -128,3 +128,12 @@ export const NavBtnLink = styled(LinkR)`
     color: #010606;
   }
 `;
+export const UserName = styled.span`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+`;

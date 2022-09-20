@@ -37,15 +37,6 @@ const locationToLinks = {
       offset: -80,
     },
     {
-      text: "PREMIUM",
-      type: "scrollLink",
-      to: "premium",
-      smooth: true,
-      duration: 500,
-      spy: true,
-      offset: -80,
-    },
-    {
       text: "SERVICES",
       type: "scrollLink",
       to: "services",
@@ -55,9 +46,9 @@ const locationToLinks = {
       offset: -80,
     },
     {
-      text: "RELEASE",
+      text: "PREMIUM",
       type: "scrollLink",
-      to: "release",
+      to: "premium",
       smooth: true,
       duration: 500,
       spy: true,
@@ -90,6 +81,54 @@ const locationToLinks = {
       text: "NEW",
       type: "category",
       category: "new",
+    },
+  ],
+  "/product": [
+    {
+      text: "HOME",
+      type: "navLink",
+      to: "/",
+    },
+    {
+      text: "SHOP",
+      type: "navLink",
+      to: "/category/products",
+    },
+  ],
+  "/signIn": [
+    {
+      text: "HOME",
+      type: "navLink",
+      to: "/",
+    },
+    {
+      text: "SHOP",
+      type: "navLink",
+      to: "/category/products",
+    },
+  ],
+  "/cart": [
+    {
+      text: "HOME",
+      type: "navLink",
+      to: "/",
+    },
+    {
+      text: "SHOP",
+      type: "navLink",
+      to: "/category/products",
+    },
+  ],
+  "/favorites": [
+    {
+      text: "HOME",
+      type: "navLink",
+      to: "/",
+    },
+    {
+      text: "SHOP",
+      type: "navLink",
+      to: "/category/products",
     },
   ],
 };
